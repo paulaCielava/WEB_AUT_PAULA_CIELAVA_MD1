@@ -11,7 +11,7 @@ describe('Selectable Page', () => {
     cy.contains('Six').click().should('have.class', 'list-group-item');
     cy.contains('Eight').click().should('have.class', 'list-group-item');
   
-    // Elements "One", "Three", "Five", "Seven", "Nine" -> not highlighted
+    // Validate Elements "One", "Three", "Five", "Seven", "Nine" -> not highlighted
     cy.contains('One').should('not.have.class', 'list-group-item.list-group-item-action');
     cy.contains('Three').should('not.have.class', 'list-group-item.list-group-item-action');
     cy.contains('Five').should('not.have.class', 'list-group-item.list-group-item-action');
